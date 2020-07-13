@@ -1,3 +1,3 @@
 # Practices
 
-These are my personal code practices
+These are my personal code practices.

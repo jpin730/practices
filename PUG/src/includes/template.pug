@@ -1,0 +1,17 @@
+block config
+	include config
+
+include mixins
+
+doctype
+html
+	head
+		title= `${pageTitle} - ${siteName}`
+		block styles
+			link(rel="stylesheet" href="css/styles.css")
+	body
+		include menu
+		h1 My Page
+		block content
+		footer
+			block footer

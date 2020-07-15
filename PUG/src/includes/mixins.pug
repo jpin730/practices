@@ -1,0 +1,10 @@
+mixin button(url, text)
+  a(href=url)= text
+
+mixin card(image, title, description)
+  article.card
+    .card__image
+      img(src= `/img/${image}`)
+    h2.card__title= title
+    block contentCard
+    p.card__body= description

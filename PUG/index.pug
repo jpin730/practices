@@ -1,0 +1,76 @@
+doctype
+head
+  title My Page with Pug
+  meta(name="viewport" content="")
+  style.
+    body {
+      background-color: yellow;
+    }
+body
+  h1(style={color: "brown", "font-size":"3em"}) Welcome
+  // JS
+  - let pClass = 'parr'
+  - let name = 'Jaime'
+  -
+    let jaime = {
+      name: 'Pineda',
+      age: 24
+    }
+  
+  p= 'Hello ' + name
+  p= `${name} ${jaime.name} is your name`
+  p(class=pClass)
+  p= jaime.age
+
+  if name === 'Jaime'
+    p Ok
+  else
+    p No Ok
+  
+  - var days = ['mon', 'tue', 'wed']
+  each day, i in days
+    p= `${day.toUpperCase()} is day ${i}`
+
+  - pages = ['Home', 'About Us', 'Contact']
+  ul
+    each page in pages
+      li: a(href=`${page.split(' ').join('-').toLowerCase()}.html`)= page
+    else
+      li No items availible
+
+  ul
+    each val, key in jaime
+      li= `${key}: ${val}`
+
+  -
+    var pages2 = [
+    {
+      title: 'Home',
+      url: 'index.html',
+      child: []
+    },
+    {
+      title: 'Services',
+      url: 'services.html',
+      child: [
+        {
+          title: 'Web Design',
+          url: 'web-design.html'
+        },
+        {
+          title: 'SEO',
+          url: 'seo.html'
+        }
+      ]
+    },
+    {
+      title: 'Contact Us',
+      url: 'contact.html',
+      child: []
+    }]
+  each page in pages2
+    li: a(href=page.url)=page.title
+      if page.child.length > 0
+        ul 
+          each subPage in page.child
+            li: a(href=subPage.url)= subPage.title

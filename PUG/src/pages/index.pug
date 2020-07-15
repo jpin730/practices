@@ -1,0 +1,23 @@
+//- style
+//-     include ../css/styles.css
+//- include ../includes/menu
+//- script
+//-     include ../js/script.js
+
+extends ../includes/template
+
+append config
+    - pageTitle = 'Home' //edit var
+
+append styles
+    link(href="#" ref="stylesheet")
+
+block content
+    p Welcome to my page
+    +button('https://www.google.com', 'GOOGLE')
+    +card('img.jpg', 'Card', 'Description of the card')
+        block contentCard
+            p Hello Card
+
+block footer
+    p Jaime Pineda

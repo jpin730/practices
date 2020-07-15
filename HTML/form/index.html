@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+                <div>
+
+        <!-- TEXT -->
+                    <label>Input username:
+                        <input id="username" name="username">
+                    </label>
+                </div>
+
+        <!-- E-MAIL -->
+                <div>
+                    <label>
+                        Input e-mail:
+                        <input type="email">
+                    </label>
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>Platform Data:</legend>
+        
+        <!-- DATE -->
+            <div>
+                <label>
+                    Input date:
+                    <input type="date">
+                </label>
+            </div>
+
+        <!-- NUMBER -->
+            <div>
+                <label>
+                    Input phone:
+                    <input type="number" placeholder="Phone" readonly value="3">
+                </label>
+            </div>
+            
+        <!-- PASSWORD -->
+            <div>
+                <label>Input password:
+                    <input type="password" name="password" required>
+                </label>
+            </div>
+        </fieldset>
+        
+        <!-- CHECKBOX -->
+        <fieldset>
+            <legend>Your hobbies:</legend>
+            <label><input type="checkbox">Sports</label>
+            <label><input type="checkbox">Movies</label>
+            <label><input type="checkbox">Music</label>
+            <label><input type="checkbox">Reading</label>
+        </fieldset>
+        
+        <!-- RADIO -->
+        <fieldset>
+            <legend>Gender:</legend>
+            <label><input type="radio" name="gender">Male</label>
+            <label><input type="radio" name="gender">Female</label>
+            <label><input type="radio" name="gender">Prefer not to say</label>
+        </fieldset>
+        
+        <!-- SELECT -->
+        <fieldset>
+            <legend>Country:</legend>
+            <select name="country" id="country" multiple>
+                <optgroup label="America">
+                    <option value="pe">Peru</option>
+                    <option value="co">Colombia</option>
+                    <option value="ve">Venezuela</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="es">Spain</option>
+                    <option value="it">Italy</option>
+                </optgroup>
+            </select>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+        <!-- <button>Submit</button> -->
+        <input type="submit" >
+    </form>
+    <script>
+        document.getElementById('username').addEventListener('keyup', e => {
+            console.log(e.target.value)
+        })
+    </script>
+</body>
+</html>

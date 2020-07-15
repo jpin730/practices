@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        video {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- VIDEO -->
+    <h1>Video</h1>
+    <video src="media/video.mkv" id="video" poster="media/plini.jpg"></video>
+    <br>
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <hr>
+    <!-- AUDIO -->
+    <h1>Audio</h1>
+    <audio src="media/audio.mp3" autoplay controls></audio>
+
+
+    <!-- SCRIPT -->
+    <script>
+        const video = document.getElementById('video')
+        const play = document.getElementById('play')
+        const pause = document.getElementById('pause')
+
+        play.addEventListener('click', () => {video.play()})
+        pause.addEventListener('click', () => {video.pause()})
+    </script>
+</body>
+</html>

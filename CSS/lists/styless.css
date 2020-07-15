@@ -1,0 +1,65 @@
+.ull,
+.oll {
+  list-style: none;
+}
+
+.lii::before {
+  content: '';
+  background-image: url(https://image.flaticon.com/icons/png/512/758/758569.png);
+  display: inline-block;
+  background-size: contain;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+}
+
+/* COUNTER */
+.chapters {
+  counter-reset: ch;
+}
+
+.chapter {
+  counter-increment: ch;
+}
+
+.chapter::before {
+  content: counter(ch) '. ';
+  color: red;
+  /*margin-right: 0.25em;*/
+}
+
+.lista {
+  counter-reset: list;
+}
+
+.item {
+  counter-increment: list;
+  list-style: none;
+}
+
+.item::before {
+  content: counters(list,'.') '. ';
+  
+}
+
+.temary {
+  counter-reset: titles;
+}
+
+.title {
+  counter-increment: titles;
+  counter-reset: contents;
+}
+
+.title::before {
+  content: counter(titles) '. ';
+}
+
+.content {
+  counter-increment: contents;
+  margin-left: 1em;
+}
+
+.content::before {
+  content: counter(titles) '.' counter(contents) '. ';
+}

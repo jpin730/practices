@@ -1,0 +1,53 @@
+body {
+    font-size: 2em;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 0.3em;
+    
+    /* text-decoration-line: line-through;
+    text-decoration-style: double;
+    text-decoration-color: red; */
+    
+    text-decoration: line-through double red;
+    
+    text-shadow: 2px 2px 5px #666;
+}
+
+p {
+    /* margin: 2em;
+    text-align: center;
+    line-height: 1.5; */
+}
+
+div {
+    margin: 0 auto;
+    width: 300px;
+    background: yellow;
+    text-align: center;
+}
+
+span {
+    font-size: 0.5em;
+    vertical-align: bottom;
+}
+
+.parr {
+    width: 100px;
+    border: 2px solid black;
+    margin: 30px auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    /* word-break: break-all;
+    word-wrap: break-word;  SIMILAR*/
+    
+    /*writing-mode: vertical-lr;
+    text-orientation: upright;*/
+}
+
+.pp {
+    text-transform: capitalize;
+    font-family: 'Dancing Script', cursive;
+}

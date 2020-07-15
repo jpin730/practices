@@ -1,0 +1,47 @@
+.small {
+    font-size: 0.5em;
+}
+
+.big {
+    font-size: 2em;
+}
+
+.post-description{
+    color: blue;
+}
+
+  /* CASCADE */
+.product-description {
+    color: red;
+    /* color: red !important; COMENTAR PORQUÉ SE USO PARA CORREGIR */
+}
+
+.product-description {
+    color: green;
+}
+
+h1 {
+    color: blue;
+}
+
+span {
+    font-size: 3em;
+}
+
+/* INHERIT & INITIAL*/
+p {
+    color: gray;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    color: red;
+}
+
+li span {
+    font-size: initial;
+    color: initial;
+}

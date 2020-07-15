@@ -1,0 +1,96 @@
+:root {
+    --color-1: green;
+    --color-2: purple;
+}
+
+body {
+    margin: 1em;
+}
+
+li > ul {
+    display: none;
+}
+
+li:hover ul{
+    display: block;
+}
+.title1 {
+    color: var(--color-1);
+}
+
+.title2 {
+    color: var(--color-2);
+}
+
+.subtitle {
+    font-size: 0.5em;
+    margin: -2em;
+}
+
+.title1 + .subtitle {
+    color: var(--color-1);
+}
+
+.title2 + .subtitle {
+    color: var(--color-2);
+}
+
+.enable {
+    display: none;
+}
+
+.check:checked + .enable{
+    display: block;
+}
+
+.check:checked ~ .desable{
+    display: none;
+}
+
+[type="email"] {
+    border: 1px solid blue;
+}
+
+[type="submit"] {
+    background: red;
+    color: white;
+    border: none;
+}
+
+[required] {
+    border: 2px solid red;
+}
+
+a {
+    background: url(https://image.flaticon.com/icons/svg/25/25284.svg) no-repeat center right / 1rem;
+    padding-right:1.1rem;
+    color: blue;
+}
+
+[href^="/"] {
+    color: red;
+    background: none;
+}
+
+[href$=".pdf"] {
+    background: url(https://www.flaticon.com/premium-icon/icons/svg/2955/2955473.svg) no-repeat center right / 1rem;
+    padding-right:1.1rem;
+    color: green;
+}
+
+[class*= "button-"] {
+    display: inline-block;
+    margin: 1em;
+    padding: 1em 2em;
+    background: none;
+    text-decoration: none;
+    color: white;
+}
+
+.button-cta {
+    background-color: green;
+}
+
+.button-alert {
+    background-color: red;
+}

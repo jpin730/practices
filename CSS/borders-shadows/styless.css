@@ -1,0 +1,73 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.box {
+    padding-top: 0.1px;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+
+    /* TRIANGLE
+    
+    border-top: 150px solid blue;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid transparent;
+    
+    border-style: solid;
+    border-width: 150px;
+    border-color: blue transparent transparent;
+    
+    border: 150px solid;
+    border-color: blue transparent transparent; */
+    
+    /* YT LOGO (NO EXACT)
+    */
+    width: 500px;
+    height: 350px;
+    background: red;
+    --border-radius-x: 60px;
+    --border-radius-y: 150px;
+    
+    /* border-top-left-radius: var(--border-radius-x) var(--border-radius-y);
+    border-top-right-radius: var(--border-radius-x) var(--border-radius-y);
+    border-bottom-right-radius: var(--border-radius-x) var(--border-radius-y);
+    border-bottom-left-radius: var(--border-radius-x) var(--border-radius-y); */
+    
+    border-radius: var(--border-radius-x)  / var(--border-radius-y);
+}
+
+.play {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    margin-left: 175px;
+    margin-top: 75px; /* PROBLEM SOLVE: .box { padding-top: 0.1px; } */
+    border-style: solid;
+    border-width: 100px 200px;
+    border-color: transparent transparent transparent white;
+}
+
+.box-2 {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto; /* Predomina .box */
+    
+    /* Multiple shadows 
+    box-shadow: 0 0 0 10px red,
+                0 0 0 20px yellow,
+                0 0 0 30px green; */
+    /* Sphere 
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: -10px -10px 40px rgba(0,0,0,0.5) inset,
+                10px 10px 10px rgba(0,0,0,0.5);
+    */
+    
+    /* FLAGS */
+    width: 160px;
+    height: 120px;
+    box-shadow: 0 40px 0 yellow inset, 0 80px 0 red inset;
+}

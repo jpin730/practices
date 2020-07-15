@@ -1,0 +1,24 @@
+body {
+  height: 100vh;
+  margin: 0;
+  /*background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8a/HTML5.png), url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/425px-CSS3_logo_and_wordmark.svg.png), url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/1024px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg);
+  background-size: 25%, 15%, contain;
+  background-repeat: no-repeat;
+  background-position: 0 0, bottom 20px right 20px, center;*/
+  background: url(https://upload.wikimedia.org/wikipedia/commons/8/8a/HTML5.png) top left/25%, url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/425px-CSS3_logo_and_wordmark.svg.png) bottom 20px right 20px/15%, url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/1024px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg) center/contain;
+  background-repeat: no-repeat;
+}
+
+/*
+.parallax {
+  padding: 3em 0;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/The_Isleworth_Mona_Lisa.jpg/581px-The_Isleworth_Mona_Lisa.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+}
+*/

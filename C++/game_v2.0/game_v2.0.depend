@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1593979794 source:/home/jaime/Desktop/practices/C++/game_v2.0/main.cpp
+	<iostream>
+	"Player.h"
+	"MapCell.h"
+	"GameMap.h"
+
+1593922418 /home/jaime/Desktop/practices/C++/game_v2.0/include/Player.h
+
+1593922447 /home/jaime/Desktop/practices/C++/game_v2.0/include/MapCell.h
+
+1593922513 source:/home/jaime/Desktop/practices/C++/game_v2.0/src/MapCell.cpp
+	"MapCell.h"
+
+1593926058 source:/home/jaime/Desktop/practices/C++/game_v2.0/src/Player.cpp
+	"Player.h"
+	<iostream>
+
+1593979716 source:/home/jaime/Desktop/practices/C++/game_v2.0/src/GameMap.cpp
+	"GameMap.h"
+	<iostream>
+	<fstream>
+	<cstdlib>
+
+1593925230 /home/jaime/Desktop/practices/C++/game_v2.0/include/GameMap.h
+	"MapCell.h"
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGEX</title>
+</head>
+<body>
+  <h1>Input email</h1>
+  <input type="text" name="email" onkeyup="validate(this.value)" id="in">
+  <input type="button" value="Submit" id="button" disabled>
+  <script>
+    function validate(str) {
+      console.log(str);
+      if(str.match(/^\w{5,}@[\w\.]{2,}\.\w{2,5}$/i)) {
+        document.getElementById("button").disabled = false;
+        document.getElementById("in").style.backgroundColor = "blue";
+      }
+      else {
+        document.getElementById("button").disabled = true;
+        document.getElementById("in").style.backgroundColor = "red";
+      }
+    }
+  </script>
+</body>
+</html>

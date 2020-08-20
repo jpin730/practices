@@ -1,0 +1,17 @@
+{
+  "name": "async-rick-and-morty-api",
+  "version": "1.0.0",
+  "description": "async",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "callback": "node src/callback/index.js",
+    "promise": "node src/promise/index.js",
+    "async": "node src/async/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}

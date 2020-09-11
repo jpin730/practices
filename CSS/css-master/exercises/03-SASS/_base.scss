@@ -1,0 +1,111 @@
+$typical-font: sans-serif, Helvetica, Arial;
+$bg-color: #ccc;
+$font-color-1: #f00;
+$font-color-2: rgb(122, 20, 20);
+
+body {
+  background-color: $bg-color;
+}
+
+h1 {
+  font-family: $typical-font;
+  color: $font-color-1;
+}
+
+p {
+  color: $font-color-2;
+}
+
+.box {
+  border: 1px solid #000;
+  width: 500px;
+  margin: 0px auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+
+  h1 {
+    color: #0000ff;
+  }
+
+  p {
+    color: #008000;
+  }
+
+  .info {
+    font-size: 10px;
+
+    .author {
+      font-size: 15px;
+      color: #ffa500;
+    }
+  }
+}
+
+@mixin createBorders($color, $size, $shadow) {
+  border: $size solid $color;
+  border-radius: $size;
+  box-shadow: 0 0 $size $shadow;
+}
+
+.box {
+  @include createBorders(red, 10px, black);
+}
+
+.list {
+  @include createBorders(green, 5px, yellow);
+}
+
+%alert-normal {
+  border: 10px solid orange;
+  background-color: black;
+  color: orange;
+  padding: 10px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.alert {
+  @extend %alert-normal;
+}
+
+.alert-danger {
+  @extend %alert-normal;
+  color: red;
+  border-color: red;
+}
+
+.alert-success {
+  @extend %alert-normal;
+  color: green;
+  border-color: green;
+}
+
+h1 {
+  font-size: 20px + 20px;
+}
+
+.box {
+  width: 50px/100px * 100%; // = 50%
+}
+
+// $bg-color: black;
+h1 {
+  @if $bg-color == #ccc {
+    color: black;
+  } @else if $bg-color == black{
+    color: white;
+  } @else {
+    color: red;
+  }
+}
+
+$counter: 1;
+@for $counter from 1 through 9 {
+  .list ul li:nth-child(#{$counter}) {
+    font-size: $counter * 5px;
+  }
+}

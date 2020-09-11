@@ -1,0 +1,52 @@
+@bg-color: lightblue;
+@font: Arial;
+@b: body;
+
+@{b} {
+  background-color: @bg-color;
+}
+
+h1 {
+  font-family: @font;
+}
+
+.info {
+  ul {
+    a {
+      color: white;
+      font-size: 18px;
+    }
+  }
+}
+
+.shadows(@size) {
+  box-shadow: 0 0 @size #000;
+  text-shadow: 0 0 @size gray;
+}
+
+.info {
+  .shadows(5px);
+}
+
+h1 {
+  font-size: 30px + 7px;
+}
+
+.textBlack (@value) when (@value=ok) {
+  color: black;
+}
+
+h1 {
+  color: blue;
+  .textBlack(ok);
+}
+
+.loop(@cont) when (@cont > 0) {
+  .loop((@cont - 1));
+  height: (900px/@cont);
+}
+
+.info {
+  height: 900px;
+  .loop(5)
+}
